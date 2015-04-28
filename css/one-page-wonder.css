@@ -133,6 +133,10 @@ footer {
 	height: 900px;
 }
 
+.logop {
+	font-family: 'Lustria', serif;
+}
+
 /* Responsive */
 
 @media(max-width:1200px) {
