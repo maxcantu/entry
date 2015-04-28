@@ -135,6 +135,9 @@ footer {
 
 .logop {
 	font-family: 'Lustria', serif;
+	font-size: 34px;
+	color: white;
+	line-height: 46px;
 }
 
 /* Responsive */
