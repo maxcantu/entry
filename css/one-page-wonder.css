@@ -140,10 +140,6 @@ footer {
 	line-height: 46px;
 }
 
-.thumb {
-	cursor: url(glass.cur);
-}
-
 /* Responsive */
 
 @media(max-width:1200px) {
