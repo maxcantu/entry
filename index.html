@@ -32,6 +32,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    <link rel="stylesheet" href="css/flipclock.css">
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' type='text/css'>
@@ -101,7 +103,7 @@
 						<p>Aprende a llevar a la práctica las mejores técnicas del marketing digital y a ejecutarlas de manera efectiva.</p>
 						<br>
 						<a href="#registro" class="button-cta">Inscríbete al curso</a>
-						<br><br><br><br><br>
+						<br><br><br><br>
 					</div>
 				</div>
             </div>
@@ -110,6 +112,12 @@
 
     <!-- Page Content -->
     <div class="container">
+
+		<hr class="featurette-divider">
+
+		<div class="featurette" id="descripcion">
+			<div class="your-clock"></div>
+        </div>
 
 		<hr class="featurette-divider">
 		
@@ -387,6 +395,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 	
+	<script src="js/flipclock.min.js"></script>
+	
 	<!-- Scroll -->
 	<script>
 		$(function() {
@@ -401,6 +411,9 @@
 		        return false;
 		      }
 		    }
+		  });
+		  var clock = $('.your-clock').FlipClock({
+			// ... your options here
 		  });
 		});
 	</script>
