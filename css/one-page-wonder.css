@@ -258,3 +258,36 @@ footer {
         padding: 50px 0;
     }
 }
+
+/* Counter */
+
+@media(max-width:320px) {
+	.your-clock{
+	   zoom: 0.2;
+	   -moz-transform: scale(0.2)
+	}
+}
+@media(max-width:479px) {
+	.your-clock{
+	   zoom: 0.45;
+	   -moz-transform: scale(0.45)
+	}
+}
+@media(max-width:768px) {
+	.your-clock{
+	   zoom: 0.6;
+	   -moz-transform: scale(0.6)
+	}
+}
+@media(max-width:900px) {
+	.your-clock{
+	   zoom: 0.8;
+	   -moz-transform: scale(0.8)
+	}
+}
+@media(max-width:1300px) {
+	.your-clock{
+	   zoom: 0.9;
+	   -moz-transform: scale(0.9)
+	}
+}
