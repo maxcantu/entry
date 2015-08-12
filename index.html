@@ -115,7 +115,7 @@
 
 		<hr class="featurette-divider">
 
-		<div class="featurette" id="descripcion">
+		<div class="featurette" style="overflow: visible;">
 			<div class="your-clock"></div>
         </div>
 
@@ -400,21 +400,25 @@
 	<!-- Scroll -->
 	<script>
 		$(function() {
-		  $('a[href*=#]:not([href=#])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $('html,body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000);
-		        return false;
-		      }
-		    }
-		  });
-		  var clock = $('.your-clock').FlipClock({
-			// ... your options here
-		  });
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+				        $('html,body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000);
+				        return false;
+		    		}
+		    	}
+		  	});
+		  	var a = new Date();
+		  	var b = new Date('08/19/2015');
+		  	var diff = (b - a) / 1000;
+		  	alert(diff);
+			var clock = $('.your-clock').FlipClock(diff, {
+				clockFace: 'DailyCounter'
+			});
 		});
 	</script>
 </body>
