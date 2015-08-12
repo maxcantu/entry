@@ -263,8 +263,8 @@ footer {
 
 @media(max-width:768px) {
 	.your-clock{
-	   zoom: 0.8;
-	   -moz-transform: scale(0.8)
+	   zoom: 0.5;
+	   -moz-transform: scale(0.5)
 	}
 }
 @media(min-width:768px) {
