@@ -59,13 +59,13 @@
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="first">
-                        <a href="#detalles">Efectivo</a>
+                        <a href="#efectivo">Efectivo</a>
                     </li>
                     <li>
-                        <a href="#descripcion">Tarjeta</a>
+                        <a href="#tarjeta">Tarjeta</a>
                     </li>
                     <li>
-                        <a href="#mentores">Paypal</a>
+                        <a href="#paypal">Paypal</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +85,7 @@
 		
 		<hr class="featurette-divider">
 		
-        <!-- Detalles del Taller -->
+        <!-- Efectivo -->
         <div class="featurette" id="efectivo">
             <h2 class="featurette-heading">Pago en Efectivo</h2>
             <h3>Usando este método de pago podrás pagar en efectivo en las siguientes tiendas soportadas:</h3>
@@ -96,6 +96,24 @@
 			<a href="https://www.compropago.com/comprobante/?id=afd81113-45e7-4c05-b398-ef89069a559e">
 				<img src="https://www.compropago.com/assets/payment-green-btn.png" />
 			</a>	
+		</div>
+
+        <hr class="featurette-divider">
+        
+        <!-- Paypal -->
+        <div class="featurette" id="paypal">
+            <h2 class="featurette-heading">Pago con Paypal</h2>
+            <h3>Usando este método de pago podrás pagar en efectivo en las siguientes tiendas soportadas:</h3>
+            <h4>OXXO, 7Eleven, Coppel, Extra, Elektra, Casa Ley, Chedraui, Super Che, Soriana, Telecomm, Farmacias Benavides, Farmacias Esquivar y Farmacias ABC.</h4>
+            <br>
+            <p>Da click en la siguiente imagen para pagar:</p>
+            <br>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="TKWFRNZ533T54">
+			<input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+			<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+			</form>
 		</div>
 
         <hr class="featurette-divider">
